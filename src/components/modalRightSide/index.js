@@ -1,13 +1,18 @@
 import * as React from 'react'
+import close from 'assets/close.png'
+import shoes from 'assets/shoes.png'
+import wallet from 'assets/wallet.png'
+import handbag from 'assets/handbag.png'
+import sandals from 'assets/sandals.png'
+import deleteItem from 'assets/delete.png'
 import {
-  ContainerRightModal, 
-  ModalSideView, 
-  ModalHeader, 
-  ModalTitle, 
-  CloseModal, 
+  ContainerRightModal,
+  ModalSideView,
+  ModalHeader,
+  ModalTitle,
+  CloseModal,
   Line,
-  ProductsItems, 
-  VerticalLine,
+  ProductsItems,
   ImagesSection,
   ProductsDetails,
   Products,
@@ -25,14 +30,8 @@ import {
   Checkout,
   Total,
   ShareTotal,
-  PromotioWrapper
+  PromotioWrapper,
 } from './styles'
-import close from '../../assets/close.png'
-import shoes from '../../assets/shoes.png'
-import wallet from '../../assets/wallet.png'
-import handbag from '../../assets/handbag.png'
-import sandals from '../../assets/sandals.png'
-import deleteItem from '../../assets/delete.png'
 
 export function ModalRightSide({ setModalOpen }) {
   const handleClose = () => {
@@ -68,74 +67,62 @@ export function ModalRightSide({ setModalOpen }) {
     {
       img: sandals,
       text: 'Rasteira Tira Dedo',
-      price: [
-        '49,90', '40,90'
-      ],
+      price: ['49,90', '40,90'],
       quantity: 4,
     },
   ]
 
-  return(
+  return (
     <>
-    <ContainerRightModal />      
-    <ModalSideView>
-    <ModalHeader>
-      <ModalTitle>
-        <h1>Sacola</h1>
-        <p>5 itens</p>
-      </ModalTitle>
-      <CloseModal onClick={handleClose}>
-        <img src={close} alt="Clique para fechar" /> 
-      </CloseModal>
-    </ModalHeader>
-    <Line/>        
-      <ProductsItems>
-        <ShareColumns>
-          {
-            products.map(product => (
+      <ContainerRightModal />
+      <ModalSideView>
+        <ModalHeader>
+          <ModalTitle>
+            <h1>Sacola</h1>
+            <p>5 itens</p>
+          </ModalTitle>
+          <CloseModal onClick={handleClose}>
+            <img src={close} alt="Clique para fechar" />
+          </CloseModal>
+        </ModalHeader>
+        <Line />
+        <ProductsItems>
+          <ShareColumns>
+            {products.map((product) => (
               <Products>
                 <ImagesSection>
-                <img src={product.img} alt={product.text}/>
+                  <img src={product.img} alt={product.text} />
                 </ImagesSection>
                 <ProductsDetails>
                   <Text>{product.text}</Text>
-                  <Price>{product.price}</Price> 
-                  </ProductsDetails>
-                  <CountSection>
-                    <Minus>
-                        -
-                    </Minus>
-                      <p>{product.quantity}</p>
-                    <More>
-                        +
-                    </More>
-                </CountSection> 
+                  <Price>{product.price}</Price>
+                </ProductsDetails>
+                <CountSection>
+                  <Minus>-</Minus>
+                  <p>{product.quantity}</p>
+                  <More>+</More>
+                </CountSection>
                 <DeleteItem>
-                <img src={deleteItem} alt=""/>
-                </DeleteItem>                
-              </Products> 
-            ))
-          }
-        </ShareColumns>             
-      </ProductsItems>
-      <PromotioWrapper>
-        <Promotion>
-          <TextPromotion>
-            Faltam R$ xx,xx para você 
-          </TextPromotion>
-          <p>Ganhar Frete Grátis</p>             
-        </Promotion>
-        <ModalFooter>
-          <PriceDetails>
-            <Total>Total: R$ 149,00</Total>
-            <ShareTotal>até 3x de R$ 49,90 sem juros </ShareTotal>
-          </PriceDetails>
-          <Checkout>
-            Finalizar compra
-          </Checkout>
-        </ModalFooter>
-      </PromotioWrapper>
-  </ModalSideView>
-  </>
+                  <img src={deleteItem} alt="" />
+                </DeleteItem>
+              </Products>
+            ))}
+          </ShareColumns>
+        </ProductsItems>
+        <PromotioWrapper>
+          <Promotion>
+            <TextPromotion>Faltam R$ xx,xx para você</TextPromotion>
+            <p>Ganhar Frete Grátis</p>
+          </Promotion>
+          <ModalFooter>
+            <PriceDetails>
+              <Total>Total: R$ 149,00</Total>
+              <ShareTotal>até 3x de R$ 49,90 sem juros </ShareTotal>
+            </PriceDetails>
+            <Checkout>Finalizar compra</Checkout>
+          </ModalFooter>
+        </PromotioWrapper>
+      </ModalSideView>
+    </>
   )
 }

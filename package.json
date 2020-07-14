@@ -6,6 +6,8 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "jest": "^24.9.0",
+    "kcd-scripts": "^6.2.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
@@ -17,8 +19,60 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "babel": {
+    "presets": [
+      "kcd-scripts/babel"
+    ]
+  },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "./node_modules/kcd-scripts/eslint.js",
+    "rules": {
+      "import/prefer-default-export": "off",
+      "jsx-a11y/label-has-for": "off",
+      "react/prop-types": "off",
+      "import/no-unassigned-import": "off",
+      "no-console": "off",
+      "jsx-a11y/accessible-emoji": "off",
+      "consistent-return": "off",
+      "jsx-a11y/autocomplete-valid": "off",
+      "react-hooks/exhaustive-deps": "off",
+      "import/extensions": [
+        {
+          "ignorePackages": true,
+          "pattern": {
+            "png": "never"
+          }
+        }
+      ]
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "paths": [
+            "src"
+          ],
+          "extensions": [
+            ".js",
+            ".png",
+            ".jpg"
+          ]
+        }
+      }
+    }
+  },
+  "eslintignore": [
+    "node_modules"
+  ],
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "proseWrap": "always"
   },
   "browserslist": {
     "production": [

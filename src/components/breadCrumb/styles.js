@@ -1,17 +1,21 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Home = styled.div`
   height: 38px;
-  width: 154px;
+  max-width: 154px;
+  width: 100%;
   font-size: 12px;
   line-height: 18px;
-  color: #AEB6C1;
+  color: #aeb6c1;
   margin-left: 10px;
   margin-bottom: 11px;
   padding-left: 10px;
-  display: flex;  
+  display: flex;
   align-items: center;
   div {
     margin: 0;
+  }
+  @media only screen and (max-width: 768px) {
+    display: none;
   }
 `

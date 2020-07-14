@@ -1,15 +1,25 @@
 import * as React from 'react'
-import shoesImg from '../../assets/shoesImg.png'
-import play from '../../assets/play.png'
-import arrowUp from '../../assets/arrowUp.jpg'
-import arrowDown from '../../assets/arrowDown.jpg'
-import { VideoWatch, ScrollPictures, AllImages, Container, Play, Title, PlayIcon, ArrowUp, ArrowDown } from './styles'
+import shoesImg from 'assets/shoesImg.png'
+import play from 'assets/play.png'
+import arrowUp from 'assets/arrowUp.jpg'
+import arrowDown from 'assets/arrowDown.jpg'
+import {
+  VideoWatch,
+  ScrollPictures,
+  AllImages,
+  Container,
+  Play,
+  Title,
+  PlayIcon,
+  ArrowUp,
+  ArrowDown,
+} from './styles'
 
 export function OnVIdeo() {
   return (
     <Container>
       <Title>Video</Title>
-      <VideoWatch>          
+      <VideoWatch>
         <img src={shoesImg} alt="Vídeo de sapatos" />
         <Play>
           <PlayIcon>

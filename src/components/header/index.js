@@ -1,7 +1,7 @@
 import * as React from 'react'
-import logo from '../../assets/logo.jpg'
-import iconSearch from '../../assets/icon-search.png'
-import iconBag from '../../assets/icon-bag.png'
+import logo from 'assets/logo.jpg'
+import iconSearch from 'assets/icon-search.png'
+import iconBag from 'assets/icon-bag.png'
 import {
   Container,
   LogoWrapper,
@@ -12,11 +12,10 @@ import {
   Search,
   Bag,
 } from './styles'
-import { useState } from 'react'
-import { ModalRightSide } from '../modalRightSide/index'
+import { ModalRightSide } from 'components'
 
 export function Header({ cartItems }) {
-  const [modalOpen, setModalOpen ] = useState(false);
+  const [modalOpen, setModalOpen] = React.useState(false)
   const categories = ['Sapatos', 'Bolsas', 'Acessórios', 'Off']
 
   const handleModalClick = () => {
@@ -40,15 +39,19 @@ export function Header({ cartItems }) {
         </Categories>
         <Cart>
           <Search>
-            <img src={iconSearch} alt="Campo de busca"/>
+            <img src={iconSearch} alt="Campo de busca" />
             <span>Busca</span>
           </Search>
 
           <Bag>
-            <img onClick={ handleModalClick } src={iconBag} alt="Sacola de compras"/>
-            {modalOpen ? <ModalRightSide setModalOpen={setModalOpen}/> : null}
+            <img
+              onClick={handleModalClick}
+              src={iconBag}
+              alt="Sacola de compras"
+            />
+            {modalOpen ? <ModalRightSide setModalOpen={setModalOpen} /> : null}
 
-            <p>{cartItems}</p>             
+            <p>{cartItems}</p>
           </Bag>
         </Cart>
       </Menu>

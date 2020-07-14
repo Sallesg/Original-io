@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ContainerRightModal = styled.div` 
+export const ContainerRightModal = styled.div`
   width: 100%;
   height: 100vh;
   background-color: rgba(32, 32, 32, 0.6);
@@ -13,50 +13,50 @@ export const ContainerRightModal = styled.div`
   z-index: 1;
 `
 
-export const ModalSideView = styled.div` 
+export const ModalSideView = styled.div`
   z-index: 2;
   position: fixed;
   top: 0;
   right: 0;
   width: 525px;
   height: 100vh;
-  background: #FFFFFF;
-  border: 1px solid #F2F2F2;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
   box-sizing: border-box;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-` 
+`
 
-export const ModalHeader = styled.div` 
+export const ModalHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 84px;
 `
 
-export const ModalTitle = styled.div` 
+export const ModalTitle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: 20px;
   margin-left: 40px;
-  h1{
+  h1 {
     font-size: 26px;
     line-height: 42px;
     text-transform: uppercase;
-    color: #DE8F75;
+    color: #de8f75;
     font-weight: normal;
     font-family: 'Montserrat', sans-serif;
   }
-  p{ 
+  p {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 29px;
-    color: #AEB6C1;
+    color: #aeb6c1;
   }
-` 
+`
 
-export const CloseModal = styled.div` 
-  display: flex;  
+export const CloseModal = styled.div`
+  display: flex;
   align-self: flex-start;
   margin-top: 11.83px;
   margin-right: 11.83px;
@@ -66,69 +66,67 @@ export const CloseModal = styled.div`
   }
 `
 
-export const Line = styled.hr` 
-  border: 1px solid #E3E3E3;
-  width: 466px;
-` 
+export const Line = styled.hr`
+  border: 1px solid #e3e3e3;
+  max-width: 466px;
+  width: 100%;
+`
 
-export const ProductsItems = styled.div` 
-  display: flex; 
-  height: 100%; 
+export const ProductsItems = styled.div`
+  display: flex;
+  height: 100%;
   justify-content: space-between;
   margin: 0 20px 0 30px;
   overflow: auto;
-  
 `
-export const ShareColumns = styled.div` 
+export const ShareColumns = styled.div`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   margin-right: 33.33px;
 `
 
-export const Products = styled.div` 
+export const Products = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-top: 26.56px;
-  &:first-child{
+  &:first-child {
     margin-top: 30px;
-    margin-bottom: 5.67px
-  };
-  &:last-child{
+    margin-bottom: 5.67px;
+  }
+  &:last-child {
     margin-top: 35.89px;
     margin-bottom: 85px;
   }
-  
-` 
+`
 
-export const VerticalLine = styled.hr` 
-  background: #E2E2E2;
+export const VerticalLine = styled.hr`
+  background: #e2e2e2;
   border-radius: 2px;
   height: 427px;
   width: 5px;
   overflow: scroll;
   margin-top: 17px;
-` 
+`
 
-export const ImagesSection = styled.div` 
-    width: 46px;
-    height: 59px;
-` 
+export const ImagesSection = styled.div`
+  width: 46px;
+  height: 59px;
+`
 
-export const ProductsDetails = styled.div` 
-` 
+export const ProductsDetails = styled.div``
 
-export const Text = styled.h2` 
+export const Text = styled.h2`
   font-family: 'Monteserrat', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
   color: #202020;
-` 
-export const Price = styled.h3` 
+`
+export const Price = styled.h3`
   font-family: 'Monteserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -137,12 +135,12 @@ export const Price = styled.h3`
   color: #000000;
 `
 
-export const DeleteItem = styled.div` 
+export const DeleteItem = styled.div`
   width: 9.33px;
   height: 9.33px;
-` 
+`
 
-export const CountSection = styled.div` 
+export const CountSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -153,10 +151,10 @@ export const CountSection = styled.div`
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: #5F75AA;
+    color: #5f75aa;
     padding: 0 12px;
   }
-` 
+`
 
 export const Minus = styled.div`
   font-family: 'Roboto', sans-serif;
@@ -164,27 +162,27 @@ export const Minus = styled.div`
   font-weight: 900;
   font-size: 20px;
   line-height: 23px;
-  color: #AEB6C1;
-` 
+  color: #aeb6c1;
+`
 
-export const More = styled.div` 
+export const More = styled.div`
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 20px;
   line-height: 23px;
-  color: #AEB6C1;
-` 
+  color: #aeb6c1;
+`
 
-export const PromotioWrapper = styled.div` 
+export const PromotioWrapper = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-` 
+`
 
-export const Promotion = styled.div` 
-  background-color: #AEB6C1;
+export const Promotion = styled.div`
+  background-color: #aeb6c1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,7 +194,7 @@ export const Promotion = styled.div`
     font-weight: bold;
     font-size: 14px;
     line-height: 20px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 `
 
@@ -205,29 +203,27 @@ export const TextPromotion = styled.h6`
   font-size: 14px;
   font-style: normal;
   font-weight: normal;
-  color: #FFFFFF;
+  color: #ffffff;
 `
 
-export const ModalFooter = styled.div` 
+export const ModalFooter = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 90px;
-  background-color: #E3E3E3;
-` 
-
-export const PriceDetails = styled.div`
-
+  background-color: #e3e3e3;
 `
+
+export const PriceDetails = styled.div``
 
 export const Total = styled.h1`
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-  line-height: 23px; 
+  line-height: 23px;
   color: #202020;
-` 
+`
 
 export const ShareTotal = styled.p`
   font-family: Montserrat;
@@ -236,21 +232,20 @@ export const ShareTotal = styled.p`
   font-size: 12px;
   line-height: 18px;
   color: #000000;
-` 
+`
 
-export const Checkout = styled.button` 
-  width: 235.41px;
+export const Checkout = styled.button`
+  max-width: 235.41px;
+  width: 100%;
   height: 42px;
-  background: #32917B;
+  background: #32917b;
   border-radius: 3px;
   cursor: pointer;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
-
-` 
-
+`

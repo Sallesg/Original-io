@@ -1,7 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   margin-left: 19px;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `
 export const Title = styled.h1`
   width: 82px;
@@ -11,12 +14,12 @@ export const Title = styled.h1`
   font-size: 12px;
   line-height: 18px;
   text-align: center;
-  color: #DE8F75;
+  color: #de8f75;
   opacity: 0.8;
 `
 
 export const VideoWatch = styled.div`
-  img{
+  img {
     width: 82px;
     height: 45px;
   }
@@ -61,13 +64,14 @@ export const ArrowUp = styled.div`
 `
 
 export const AllImages = styled.div`
-  width: 82px;
+  max-width: 82px;
+  width: 100%;
   img {
     margin-bottom: 9.3px;
     opacity: 0.7;
   }
   img:first-child {
-    opacity: 1  ;
+    opacity: 1;
   }
 `
 

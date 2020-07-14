@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const ModalCard = styled.div`
   background-color: rgba(32, 32, 32, 0.6);
@@ -16,23 +16,23 @@ export const ContainerCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;  
-  background-color: #FFFFFF;
+  justify-content: space-between;
+  background-color: #ffffff;
   border-radius: 3px;
-  width: 445px;
+  max-width: 445px;
+  width: 100%;
   height: 602px;
   /* margin: 62px auto; */
-  
-` 
+`
 
-export const CloseModal = styled.div` 
+export const CloseModal = styled.div`
   display: flex;
   width: 16.33px;
   height: 16.33px;
-  margin: 16.83px 19.83px 17.83px 408.83px;  
+  margin: 16.83px 19.83px 17.83px 408.83px;
 `
 
-export const ItemsCard = styled.div` 
+export const ItemsCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -40,39 +40,42 @@ export const ItemsCard = styled.div`
   margin-top: 0;
   width: 100%;
   height: 100%;
-  img {    
-    width: 305px;
-    height: 358.65px;
+  img {
+    max-width: 305px;
+    width: 100%;
+    max-height: 358.65;
+    height: 100%;
   }
-  h1{
+  h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-size: 22px;
     line-height: 100%;
     text-transform: uppercase;
-    color: #DE8F75;
+    color: #de8f75;
     text-align: center;
   }
   p {
     font-family: 'Montserrat', sans-serif;
     text-decoration-line: underline;
-    color: #AEB6C1;
+    color: #aeb6c1;
     font-size: 14px;
     margin-bottom: 23px;
   }
 `
 
-export const EndShop = styled.button` 
-  width: 305px;
+export const EndShop = styled.button`
+  max-width: 305px;
+  width: 100%;
   height: 50px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-  background: #32917B;
+  background: #32917b;
   border-radius: 3px;
   border: none;
 `

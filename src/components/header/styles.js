@@ -17,13 +17,17 @@ export const LogoWrapper = styled.div`
 
 export const Menu = styled.div`
   height: 50px;
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #CCCCCC;
-  border-bottom: 1px solid #CCCCCC;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  @media only screen and (max-width: 768px) {
+    justify-content: space-around;
+  }
 `
 export const Login = styled.div`
   display: flex;
@@ -36,10 +40,14 @@ export const Login = styled.div`
   display: flex;
   align-items: center;
   color: #686868;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const Categories = styled.div`
-  width: 754px;
+  max-width: 754px;
+  width: 100%;
   display: flex;
   justify-content: center;
   cursor: pointer;
@@ -51,14 +59,17 @@ export const Categories = styled.div`
     text-align: center;
     text-transform: uppercase;
     list-style-type: none;
-    font-size: 14px;   
+    font-size: 14px;
     color: #686868;
     li {
-      width: 80px; 
+      width: 80px;
       &:not(:last-child) {
         margin-right: 10px;
       }
     }
+  }
+  @media only screen and (max-width: 600px) {
+    display: none;
   }
 `
 
@@ -84,13 +95,16 @@ export const Search = styled.div`
   }
   span {
     margin-right: 5px;
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
   }
 `
 
 export const Bag = styled.div`
   display: flex;
   margin-right: 44px;
-  p{
+  p {
     display: flex;
     font-size: 12px;
     align-items: flex-end;
@@ -99,5 +113,8 @@ export const Bag = styled.div`
     font-style: normal;
     color: #686868;
     margin-left: 4px;
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
   }
 `

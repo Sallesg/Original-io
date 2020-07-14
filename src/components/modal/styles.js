@@ -1,12 +1,21 @@
 import styled from 'styled-components'
 
 export const Modal = styled.div`
-  width: 444px;
+  max-width: 444px;
+  width: 100%;
   height: 533px;
-  border: 2px solid #D2E1DF;
+  border: 2px solid #d2e1df;
   box-sizing: border-box;
   border-radius: 3px;
   margin-right: 122px;
+  @media only screen and (max-width: 768px) {
+    border: none;
+    max-width: 768px;
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+    margin: 0;
+  }
 `
 
 export const Title = styled.h1`
@@ -16,6 +25,13 @@ export const Title = styled.h1`
   text-transform: uppercase;
   color: #202020;
   margin: 20px 19px 0 19px;
+  @media only screen and (max-width: 768px) {
+    color: #de8f75;
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: normal;
+    text-align: center;
+  }
 `
 
 export const ItemNumber = styled.p`
@@ -24,7 +40,14 @@ export const ItemNumber = styled.p`
   font-size: 14px;
   line-height: 20px;
   color: #202020;
-  margin: 0 0 17px 19px; 
+  margin: 0 0 17px 19px;
+  @media only screen and (max-width: 768px) {
+    color: #7f7f7f;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: normal;
+    text-align: center;
+  }
 `
 
 export const ItemPrice = styled.div`
@@ -41,18 +64,37 @@ export const ItemPrice = styled.div`
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
-    color: #E35442;
-    margin-left: 19px;  
+    color: #e35442;
+    margin-left: 19px;
     text-decoration-line: line-through;
-    }
+  }
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const ShareValue = styled.p`
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   line-height: 18px;
-  color: #7F7F7F;
+  color: #7f7f7f;
   margin-left: 19px;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+`
+
+export const ImageMobile = styled.div`
+  display: none;
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    width: 100%;
+    height: 324px;
+    margin: 0 auto;
+  }
 `
 
 export const Color = styled.div`
@@ -60,6 +102,9 @@ export const Color = styled.div`
   align-items: center;
   margin-left: 19px;
   margin-top: 34px;
+  @media only screen and (max-width: 768px) {
+    margin: 6px auto;
+  }
   h3 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -72,7 +117,10 @@ export const Color = styled.div`
   p {
     font-size: 14px;
     line-height: 20px;
-    color: #5F75AA;
+    color: #5f75aa;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
   }
 `
 
@@ -86,35 +134,38 @@ export const SizeDescription = styled.div`
   margin-top: 20px;
   margin-left: 20px;
   margin-bottom: 1px;
-  h3 {    
+  h3 {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 20px;  
+    line-height: 20px;
     color: #202020;
     padding-right: 5px;
   }
-  p { 
+  p {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 20px;  
-    color: #5F75AA;
+    line-height: 20px;
+    color: #5f75aa;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
   }
 `
 
-export const GuideSize = styled.div` 
-   margin-top: 20px;
-   margin-right: 58px;
-   p {
+export const GuideSize = styled.div`
+  margin-top: 20px;
+  margin-right: 58px;
+  p {
     font-size: 14px;
     line-height: 20px;
     text-decoration-line: underline;
-    color: #DE8F75;
-   }
+    color: #de8f75;
+  }
 `
 
-export const Text = styled.div` 
+export const Text = styled.div`
   margin: 16px 19px auto 20.11px;
   p {
     font-style: normal;
@@ -124,7 +175,6 @@ export const Text = styled.div`
     font-family: 'Montserrat', sans-serif;
     color: #202020;
   }
-  
 `
 
 export const ColorContainer = styled.div`
@@ -132,11 +182,14 @@ export const ColorContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   margin: 4px 0 17px 22px;
+  @media (max-width: 768px) {
+    margin: 0;
+  }
 `
 
 export const SizeContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 3px 58px 0px 19px 
+  margin: 3px 58px 0px 19px;
 `
