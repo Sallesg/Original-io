@@ -16,9 +16,9 @@ import {
   News,
   Send,
   ContainerNews,
-  Responsive,
-  IconsColumns,
+  WrapperFooter,
 } from './style'
+import { MobileFooter } from './mobileFooter'
 import logo from 'assets/logoFooter.png'
 import facebook from 'assets/facebook.png'
 import instagram from 'assets/instagram.png'
@@ -44,51 +44,50 @@ export function Footer() {
   return (
     <>
       <Line />
-      <Responsive>
+      <MobileFooter />
+      <WrapperFooter>
         <SectionFooter>
-          <IconsColumns>
-            <SocialMedia>
-              <Facebook src={facebook} alt="" />
-              <Instagram src={instagram} alt="" />
-              <Pintrest src={pintrest} alt="" />
-            </SocialMedia>
-            <LogosSection>
-              <Vtex src={vtex} alt="" />
-              <Selo src={selo} alt="" />
-            </LogosSection>
-          </IconsColumns>
-          <FooterInfosSection>
-            <ul>
-              {footerCategories.map((footerCategory) => (
-                <li>{footerCategory}</li>
-              ))}
-            </ul>
-            <ul>
-              {footerCategoriesInfos.map((footerCategoryInfos) => (
-                <li>{footerCategoryInfos}</li>
-              ))}
-            </ul>
-            <ul>
-              {footerCategoriesKnow.map((footerCategoryKnow) => (
-                <li>{footerCategoryKnow}</li>
-              ))}
-            </ul>
-          </FooterInfosSection>
-          <ContainerNews>
-            <News>
-              <h1>Assine Nossa News</h1>
-              <div>
-                <span>Nome</span>
-                <input type="Text" placeholder="nome" />
-                <input type="e-mail" placeholder="E-mail" />
-              </div>
-              <Send>
-                <p>Enviar</p>
-              </Send>
-            </News>
-          </ContainerNews>
+          <SocialMedia>
+            <Facebook src={facebook} alt="" />
+            <Instagram src={instagram} alt="" />
+            <Pintrest src={pintrest} alt="" />
+          </SocialMedia>
+          <LogosSection>
+            <Vtex src={vtex} alt="" />
+            <Selo src={selo} alt="" />
+          </LogosSection>
         </SectionFooter>
-      </Responsive>
+        <FooterInfosSection>
+          <ul>
+            {footerCategories.map((footerCategory) => (
+              <li>{footerCategory}</li>
+            ))}
+          </ul>
+          <ul>
+            {footerCategoriesInfos.map((footerCategoryInfos) => (
+              <li>{footerCategoryInfos}</li>
+            ))}
+          </ul>
+          <ul>
+            {footerCategoriesKnow.map((footerCategoryKnow) => (
+              <li>{footerCategoryKnow}</li>
+            ))}
+          </ul>
+        </FooterInfosSection>
+        <ContainerNews>
+          <News>
+            <h1>Assine Nossa News</h1>
+            <div>
+              <span>Nome</span>
+              <input type="Text" placeholder="nome" />
+              <input type="e-mail" placeholder="E-mail" />
+            </div>
+            <Send>
+              <p>Enviar</p>
+            </Send>
+          </News>
+        </ContainerNews>
+      </WrapperFooter>
       <FooterBar>
         <Text>
           <p>

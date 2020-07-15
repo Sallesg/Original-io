@@ -14,13 +14,11 @@ import {
   SizeContainer,
   ImageMobile,
 } from './styles'
-import { ButtonsColors } from '../colorButtons/index'
-import { SelectSizeContainer } from '../selectSize/index'
-import { ShopBag } from '../addBag/index'
-import ImageForMobile from '../../assets/shoesBigImg.jpg'
+import { ButtonsColors, SelectSizeContainer, ShopBag } from 'components'
+import ImageForMobile from 'assets/shoesBigImg.jpg'
 
 export function ModalDescription({ cartItems, setCartItems }) {
-  const [colors, setColors] = React.useState([
+  const [colors] = React.useState([
     {
       name: 'Fucsia',
       color: '#A9095E',
@@ -39,7 +37,7 @@ export function ModalDescription({ cartItems, setCartItems }) {
     },
   ])
 
-  const [sizes, setSizes] = React.useState([
+  const [sizes] = React.useState([
     {
       name: '33',
     },

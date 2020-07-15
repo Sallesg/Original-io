@@ -12,6 +12,7 @@ import {
   Search,
   Bag,
 } from './styles'
+import { MobileHeader } from './mobileHeader'
 import { ModalRightSide } from 'components'
 
 export function Header({ cartItems }) {
@@ -24,37 +25,42 @@ export function Header({ cartItems }) {
   }
 
   return (
-    <Container>
-      <LogoWrapper>
-        <img src={logo} alt="logo do original-io" />
-      </LogoWrapper>
-      <Menu>
-        <Login>Entrar | Cadastrar-se</Login>
-        <Categories>
-          <ul>
-            {categories.map((category) => (
-              <li>{category}</li>
-            ))}
-          </ul>
-        </Categories>
-        <Cart>
-          <Search>
-            <img src={iconSearch} alt="Campo de busca" />
-            <span>Busca</span>
-          </Search>
+    <>
+      <MobileHeader />
+      <Container>
+        <LogoWrapper>
+          <img src={logo} alt="logo do original-io" />
+        </LogoWrapper>
+        <Menu>
+          <Login>Entrar | Cadastrar-se</Login>
+          <Categories>
+            <ul>
+              {categories.map((category) => (
+                <li>{category}</li>
+              ))}
+            </ul>
+          </Categories>
+          <Cart>
+            <Search>
+              <img src={iconSearch} alt="Campo de busca" />
+              <span>Busca</span>
+            </Search>
 
-          <Bag>
-            <img
-              onClick={handleModalClick}
-              src={iconBag}
-              alt="Sacola de compras"
-            />
-            {modalOpen ? <ModalRightSide setModalOpen={setModalOpen} /> : null}
+            <Bag>
+              <img
+                onClick={handleModalClick}
+                src={iconBag}
+                alt="Sacola de compras"
+              />
+              {modalOpen ? (
+                <ModalRightSide setModalOpen={setModalOpen} />
+              ) : null}
 
-            <p>{cartItems}</p>
-          </Bag>
-        </Cart>
-      </Menu>
-    </Container>
+              <p>{cartItems}</p>
+            </Bag>
+          </Cart>
+        </Menu>
+      </Container>
+    </>
   )
 }

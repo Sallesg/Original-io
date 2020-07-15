@@ -8,6 +8,10 @@ export const Container = styled.header`
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.9);
+  @media only screen and (max-width: 800px) {
+    display: none;
+    transition: all 0.5s ease-out;
+  }
 `
 
 export const LogoWrapper = styled.div`
@@ -25,9 +29,6 @@ export const Menu = styled.div`
   align-items: center;
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
-  @media only screen and (max-width: 768px) {
-    justify-content: space-around;
-  }
 `
 export const Login = styled.div`
   display: flex;
@@ -40,9 +41,6 @@ export const Login = styled.div`
   display: flex;
   align-items: center;
   color: #686868;
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
 `
 
 export const Categories = styled.div`
@@ -68,9 +66,6 @@ export const Categories = styled.div`
       }
     }
   }
-  @media only screen and (max-width: 600px) {
-    display: none;
-  }
 `
 
 export const Cart = styled.div`
@@ -95,9 +90,6 @@ export const Search = styled.div`
   }
   span {
     margin-right: 5px;
-    @media only screen and (max-width: 600px) {
-      display: none;
-    }
   }
 `
 
@@ -113,8 +105,79 @@ export const Bag = styled.div`
     font-style: normal;
     color: #686868;
     margin-left: 4px;
-    @media only screen and (max-width: 600px) {
-      display: none;
-    }
   }
+`
+
+// RESPONSIVE VERSION
+
+export const MobileContainer = styled.div`
+  max-width: 768px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media only screen and (min-width: 801px) {
+    display: none;
+    transition: all 0.5s ease-out;
+  }
+`
+
+export const MobileMenu = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 25px;
+  width: 100%;
+  height: 14px;
+  margin-left: 18px;
+`
+
+export const One = styled.hr`
+  height: 5px;
+  width: 100%;
+  margin: 2px auto;
+  border: 1.5px solid #686868;
+`
+
+export const Two = styled.hr`
+  height: 5px;
+  width: 100%;
+  margin: 2px auto;
+  border: 1.5px solid #686868;
+`
+
+export const Three = styled.hr`
+  height: 5px;
+  width: 100%;
+  margin: 2px auto;
+  border: 1.5px solid #686868;
+`
+
+export const MobileLogo = styled.div`
+  max-width: 110px;
+  width: 100%;
+  img {
+    max-width: 110px;
+    width: 100%;
+    height: 25px;
+  }
+`
+
+export const MobileIcons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`
+
+export const MobileSearch = styled.img`
+  width: 21px;
+  height: 21px;
+  margin-right: 24px;
+`
+
+export const MobileBag = styled.img`
+  width: 21px;
+  height: 21px;
 `
