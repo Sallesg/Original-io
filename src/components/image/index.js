@@ -1,5 +1,5 @@
 import * as React from 'react'
-import mainImage from '../../assets/shoesBigImg.jpg'
+import mainImage from 'assets/shoesBigImg.jpg'
 import { ImageComponent } from './styles'
 
 export function MainImage() {

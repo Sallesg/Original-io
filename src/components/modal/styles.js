@@ -9,12 +9,7 @@ export const Modal = styled.div`
   border-radius: 3px;
   margin-right: 122px;
   @media only screen and (max-width: 768px) {
-    border: none;
-    max-width: 768px;
-    width: 100%;
-    height: auto;
-    border-radius: 0px;
-    margin: 0;
+    display: none;
   }
 `
 
@@ -25,13 +20,6 @@ export const Title = styled.h1`
   text-transform: uppercase;
   color: #202020;
   margin: 20px 19px 0 19px;
-  @media only screen and (max-width: 768px) {
-    color: #de8f75;
-    font-size: 18px;
-    line-height: 29px;
-    font-weight: normal;
-    text-align: center;
-  }
 `
 
 export const ItemNumber = styled.p`
@@ -41,13 +29,6 @@ export const ItemNumber = styled.p`
   line-height: 20px;
   color: #202020;
   margin: 0 0 17px 19px;
-  @media only screen and (max-width: 768px) {
-    color: #7f7f7f;
-    font-size: 12px;
-    line-height: 20px;
-    font-weight: normal;
-    text-align: center;
-  }
 `
 
 export const ItemPrice = styled.div`
@@ -68,9 +49,6 @@ export const ItemPrice = styled.div`
     margin-left: 19px;
     text-decoration-line: line-through;
   }
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
 `
 
 export const ShareValue = styled.p`
@@ -79,22 +57,6 @@ export const ShareValue = styled.p`
   line-height: 18px;
   color: #7f7f7f;
   margin-left: 19px;
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
-`
-
-export const ImageMobile = styled.div`
-  display: none;
-  @media only screen and (max-width: 768px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 250px;
-    width: 100%;
-    height: 324px;
-    margin: 0 auto;
-  }
 `
 
 export const Color = styled.div`
@@ -102,9 +64,6 @@ export const Color = styled.div`
   align-items: center;
   margin-left: 19px;
   margin-top: 34px;
-  @media only screen and (max-width: 768px) {
-    margin: 6px auto;
-  }
   h3 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -118,9 +77,6 @@ export const Color = styled.div`
     font-size: 14px;
     line-height: 20px;
     color: #5f75aa;
-    @media only screen and (max-width: 768px) {
-      display: none;
-    }
   }
 `
 
@@ -148,9 +104,6 @@ export const SizeDescription = styled.div`
     font-size: 14px;
     line-height: 20px;
     color: #5f75aa;
-    @media only screen and (max-width: 768px) {
-      display: none;
-    }
   }
 `
 
@@ -182,9 +135,6 @@ export const ColorContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   margin: 4px 0 17px 22px;
-  @media (max-width: 768px) {
-    margin: 0;
-  }
 `
 
 export const SizeContainer = styled.div`
@@ -192,4 +142,173 @@ export const SizeContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   margin: 3px 58px 0px 19px;
+`
+
+// RESPONSIVE VERSION
+
+export const MobileContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 768px;
+  width: 100%;
+  justify-content: center;
+  padding: 0 10px;
+  @media only screen and (min-width: 769px) {
+    display: none;
+    transition: all 0.5s ease-out;
+  }
+`
+
+export const MobileTitle = styled.h1`
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #de8f75;
+`
+
+export const MobileRefer = styled.p`
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #7f7f7f;
+  margin-bottom: 9px;
+`
+export const ImageMobile = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 25px 6px;
+`
+
+export const MobileColor = styled.div`
+  margin-left: 6px;
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: #202020;
+  }
+`
+
+export const MobileColorContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+`
+export const MobileSize = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+  margin-left: 8px;
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: #202020;
+  }
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #de8f75;
+    margin-right: 51px;
+  }
+`
+export const MobileSizeContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin: 5px 57px 33px 5px;
+`
+
+export const MobileShopPrice = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 7px;
+`
+
+export const PriceContainer = styled.div`
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    text-decoration-line: line-through;
+    color: #e35442;
+  }
+  strong {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #686868;
+  }
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #7f7f7f;
+  }
+`
+
+export const ButtonAdd = styled.button`
+  width: 150px;
+  height: 60px;
+  background: #32917b;
+  border: none;
+  border-radius: 3px;
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+`
+
+export const MobileDescription = styled.div`
+  margin: 20px 5px 0;
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #e0967e;
+    text-align: left;
+  }
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #202020;
+    text-align: left;
+  }
 `

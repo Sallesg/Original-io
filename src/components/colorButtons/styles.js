@@ -13,10 +13,10 @@ export const Container = styled.div`
     margin: 0 7.5px 1px 0;
   }
   @media (max-width: 768px) {
-    margin: 0 2px;
+    margin: 4px 2px 0;
     text-align: center;
     :first-child {
-      margin: 0 2px;
+      margin: 4px 0;
     }
   }
 `

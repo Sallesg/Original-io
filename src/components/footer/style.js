@@ -2,9 +2,12 @@ import styled from 'styled-components'
 
 export const Line = styled.hr`
   border: 2px solid #aeb6c1;
-  margin-top: 145px;
+  margin: 145px 0 0;
   max-width: 1280;
   width: 100%;
+  @media only screen and (max-width: 800px) {
+    margin: 62px 0 0;
+  }
 `
 
 export const WrapperFooter = styled.div`
@@ -228,6 +231,9 @@ export const MobileContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
   @media only screen and (min-width: 801px) {
     display: none;
     transition: all 0.5s ease-out;
@@ -240,30 +246,15 @@ export const MobileNavFooter = styled.div`
   width: 100%;
   margin-bottom: 22px;
 `
-export const NavMobile = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 36px;
-  border-bottom: 1px solid rgba(68, 71, 75, 0.4);
-  h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 23px;
-    text-indent: 15px;
-    text-transform: uppercase;
-    color: #aeb6c1;
-    margin-left: 15px;
-  }
-  p {
-    color: #aeb6c1;
-    font-size: 20px;
-    margin-right: 25px;
-  }
+
+export const MoreInfoButton = styled.button`
+  width: 9.33px;
+  height: 9.33px;
+  background: transparent;
+  border: none;
+  color: #aeb6c1;
+  font-size: 20px;
+  margin-right: 30px;
 `
 
 export const MobileSocialMedia = styled.div`
@@ -344,6 +335,7 @@ export const Button = styled.button`
   border-radius: 3px;
   border: none;
   margin-left: 16px;
+  cursor: pointer;
   p {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -351,5 +343,6 @@ export const Button = styled.button`
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
+    cursor: pointer;
   }
 `

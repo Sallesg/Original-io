@@ -117,6 +117,8 @@ export const MobileContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
   @media only screen and (min-width: 801px) {
     display: none;
     transition: all 0.5s ease-out;
@@ -131,7 +133,7 @@ export const MobileMenu = styled.div`
   max-width: 25px;
   width: 100%;
   height: 14px;
-  margin-left: 18px;
+  margin-left: 17.33px;
 `
 
 export const One = styled.hr`
@@ -169,6 +171,7 @@ export const MobileIcons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 14.86px;
 `
 
 export const MobileSearch = styled.img`
@@ -178,6 +181,6 @@ export const MobileSearch = styled.img`
 `
 
 export const MobileBag = styled.img`
-  width: 21px;
-  height: 21px;
+  width: 21.36px;
+  height: 26.83px;
 `

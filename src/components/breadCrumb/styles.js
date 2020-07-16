@@ -15,6 +15,10 @@ export const Home = styled.div`
   div {
     margin: 0;
   }
+  @media only screen and (max-width: 1100px) {
+    margin-left: 10%;
+    transition: all 0.5s ease-out;
+  }
   @media only screen and (max-width: 768px) {
     display: none;
   }

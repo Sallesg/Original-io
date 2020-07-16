@@ -2,6 +2,10 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   margin-left: 19px;
+  @media only screen and (max-width: 1100px) {
+    margin-left: 10%;
+    transition: all 0.5s ease-out;
+  }
   @media only screen and (max-width: 768px) {
     display: none;
   }

@@ -22,7 +22,6 @@ export const ContainerCard = styled.div`
   max-width: 445px;
   width: 100%;
   height: 602px;
-  /* margin: 62px auto; */
 `
 
 export const CloseModal = styled.div`

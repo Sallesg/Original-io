@@ -17,6 +17,7 @@ import {
   EmailFill,
   Button,
 } from './style'
+import { InfosFooter } from 'components'
 import facebook from 'assets/facebook.png'
 import instagram from 'assets/instagram.png'
 import pintrest from 'assets/pintrest.png'
@@ -27,18 +28,7 @@ export function MobileFooter() {
   return (
     <MobileContainer>
       <MobileNavFooter>
-        <NavMobile>
-          <h1>Institucional</h1>
-          <p>+</p>
-        </NavMobile>
-        <NavMobile>
-          <h1>Informações</h1>
-          <p>+</p>
-        </NavMobile>
-        <NavMobile>
-          <h1>Conheça</h1>
-          <p>+</p>
-        </NavMobile>
+        <InfosFooter />
       </MobileNavFooter>
       <MobileSocialMedia>
         <Facebook src={facebook} alt="" />
