@@ -103,7 +103,7 @@ export function ModalRightSide({ setModalOpen }) {
                   <More>+</More>
                 </CountSection>
                 <DeleteItem>
-                  <img src={deleteItem} alt="" />
+                  <img src={deleteItem} alt="clique para excluir o item" />
                 </DeleteItem>
               </Products>
             ))}

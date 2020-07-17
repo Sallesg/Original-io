@@ -119,6 +119,7 @@ export const MobileContainer = styled.div`
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
+  position: relative;
   @media only screen and (min-width: 801px) {
     display: none;
     transition: all 0.5s ease-out;
@@ -134,6 +135,7 @@ export const MobileMenu = styled.div`
   width: 100%;
   height: 14px;
   margin-left: 17.33px;
+  transition: opacity 500ms;
 `
 
 export const One = styled.hr`
@@ -183,4 +185,52 @@ export const MobileSearch = styled.img`
 export const MobileBag = styled.img`
   width: 21.36px;
   height: 26.83px;
+`
+
+export const MenuShowContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  z-index: 220;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(32, 32, 32, 0.9);
+`
+
+export const MobileMenuNav = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+  cursor: pointer;
+  margin: -80px 8%;
+  li {
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #de8f75;
+    margin: -100px 0;
+  }
+`
+
+export const CloseMenu = styled.div`
+  p {
+    color: #fff;
+    font-size: 25px;
+    margin: 20px 30px;
+    font-weight: 500;
+    cursor: pointer;
+  }
 `

@@ -15,6 +15,7 @@ import {
 } from './styles'
 import { ButtonsColors, SelectSizeContainer } from 'components'
 import ImageForMobile from 'assets/shoesBigImg.jpg'
+import { MobileShowModal } from '../showModal/mobileModal'
 
 export function MobileModel() {
   const [colors] = React.useState([
@@ -62,6 +63,11 @@ export function MobileModel() {
       name: '40',
     },
   ])
+
+  const [mobileModalOpen, setMobileModalOpen] = React.useState(false)
+  const handleMobileModalClick = () => {
+    return setMobileModalOpen(true)
+  }
 
   const [activeColor, setActiveColor] = React.useState('')
   function handleActiveColor(colorName) {
@@ -113,9 +119,12 @@ export function MobileModel() {
           <strong>R$ 55,20</strong>
           <h2>Ou 6x de R$ 9,20</h2>
         </PriceContainer>
-        <ButtonAdd>
+        <ButtonAdd onClick={handleMobileModalClick}>
           <p>Adicionar à Sacola</p>
         </ButtonAdd>
+        {mobileModalOpen ? (
+          <MobileShowModal setMobileModalOpen={setMobileModalOpen} />
+        ) : null}
       </MobileShopPrice>
       <MobileDescription>
         <h2>Descrição</h2>

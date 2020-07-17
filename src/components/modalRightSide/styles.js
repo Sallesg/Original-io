@@ -249,3 +249,221 @@ export const Checkout = styled.button`
   font-weight: normal;
   font-size: 12px;
 `
+
+// RESPONSIVE VERSION
+
+export const MobileRightContainer = styled.div`
+  max-width: 768px;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  top: -40px;
+  left: 0;
+  z-index: 300;
+`
+
+export const HeaderRight = styled.div`
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e3e3e3;
+`
+
+export const MobileTitle = styled.div`
+  max-width: 768px;
+  width: 100%;
+  margin-left: 25px;
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #de8f75;
+  }
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #aeb6c1;
+  }
+`
+
+export const CloseMobileModal = styled.img`
+  margin-right: 12px;
+  width: 17px;
+  height: 17px;
+`
+
+export const ItemsSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 329px;
+  max-width: 768px;
+  width: 100%;
+  margin-top: 10px;
+`
+export const MobileColumns = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+export const MobileProducts = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+`
+export const MobileImages = styled.div`
+  img {
+    width: 46px;
+    height: 59px;
+    margin-left: 12px;
+  }
+`
+export const MobileProductsDetail = styled.div``
+
+export const MobileText = styled.h1`
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+
+  color: #202020;
+`
+
+export const MobilePrice = styled.p`
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+`
+
+export const MobilePromotion = styled.div`
+  background: #aeb6c1;
+  width: 100%;
+`
+export const MobileTextPromotion = styled.h1`
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+`
+
+export const MobileFooter = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 768px;
+  width: 100%;
+  height: 63px;
+  background: #e3e3e3;
+`
+
+export const MobilePriceDetails = styled.div`
+  margin: 0 17px 0 12px;
+`
+
+export const MobileTotal = styled.h1`
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  color: #686868;
+  margin-left: 12px;
+`
+
+export const MobileShareTotal = styled.p`
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 13px;
+  color: #686868;
+  margin-left: 12px;
+`
+
+export const MobileCheckout = styled.button`
+  width: 145px;
+  height: 42px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #32917b;
+  border: none;
+  border-radius: 3px;
+  margin-right: 17px;
+`
+
+export const MobileCountSection = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5f75aa;
+    padding: 0 5px;
+  }
+`
+
+export const MobileDeleteItem = styled.div`
+  margin-right: 27px;
+  img {
+    width: 9.33px;
+    height: 9.33px;
+  }
+`
+
+export const MobileMinus = styled.p`
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  color: #aeb6c1;
+`
+
+export const MobileMore = styled.p`
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  color: #aeb6c1;
+`

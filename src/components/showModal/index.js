@@ -21,8 +21,10 @@ export function Modal({ setModalOpen }) {
           <h1>
             Produto adicionado <br /> com sucesso!
           </h1>
-          <EndShop>Finalizar Compra</EndShop>
-          <p>Continuar Comprando</p>
+          <EndShop onClick={() => setModalOpen(false)}>
+            Finalizar Compra
+          </EndShop>
+          <p onClick={() => setModalOpen(false)}>Continuar Comprando</p>
         </ItemsCard>
       </ContainerCard>
     </ModalCard>

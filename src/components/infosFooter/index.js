@@ -30,7 +30,7 @@ export function InfosFooter() {
             <MoreInfoButton onClick={handleInfoClick}>
               Institucional
             </MoreInfoButton>
-            <p>+</p>
+            <p onClick={handleInfoClick}>+</p>
           </TitleInfoBox>
           {infoOpen && (
             <ListInfoFooter>
@@ -45,7 +45,7 @@ export function InfosFooter() {
             <MoreInfoButton onClick={handleInfoClick}>
               Informações
             </MoreInfoButton>
-            <p>+</p>
+            <p onClick={handleInfoClick}>+</p>
           </TitleInfoBox>
           {infoOpen && (
             <ListInfoFooter>
@@ -58,7 +58,7 @@ export function InfosFooter() {
         <NavMobile>
           <TitleInfoBox>
             <MoreInfoButton onClick={handleInfoClick}>Conheça</MoreInfoButton>
-            <p>+</p>
+            <p onClick={handleInfoClick}>+</p>
           </TitleInfoBox>
           {infoOpen && (
             <ListInfoFooter>

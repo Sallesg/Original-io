@@ -43,6 +43,8 @@ export const ListInfoFooter = styled.div`
     color: #de8f75;
     font-size: 10px;
     height: 150px;
+    font-weight: 500;
+    text-decoration: underline;
   }
 `
 export const MoreInfoButton = styled.div`
