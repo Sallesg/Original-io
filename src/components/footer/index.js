@@ -48,9 +48,9 @@ export function Footer() {
       <WrapperFooter>
         <SectionFooter>
           <SocialMedia>
-            <Facebook src={facebook} alt="" />
-            <Instagram src={instagram} alt="" />
-            <Pintrest src={pintrest} alt="" />
+            <Facebook src={facebook} alt="facebook" />
+            <Instagram src={instagram} alt="instagram" />
+            <Pintrest src={pintrest} alt="pintrest" />
           </SocialMedia>
           <LogosSection>
             <Vtex src={vtex} alt="" />
